@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Webkit Bug</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <button id="lock">
+      Lock
+    </button>
+
+    <div class="scrollable">
+      <p>
+        Make sure this div is tall enough to make your screen scrollable.
+      </p>
+      <p>
+        Scroll down just a bit (50px or so), then click the "LOCK" button to see the bug.
+      </p>
+    </div>
+    <div class="overlay">
+      <p>
+        This overlay demonstrates the bug.
+      </p>
+      <p>
+        Observe that it is fixed: position, with top: 0, yet it is not fixed to the top in iOS 10.3 Safari, nor iOS Chrome.
+      </p>
+    </div>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
